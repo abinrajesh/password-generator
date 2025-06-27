@@ -94,6 +94,7 @@ function generatePassword() {
     // Copy Button generation
 
     document.querySelector('.copyBtn').style.display = "block";
+    document.getElementById('strength').style.display = "block";
 
 }
 
