@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Password Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>
+            Password Generator
+        </h2>
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="result">
+                <input id="result" type="text" placeholder="Click on the Generate button" readonly>
+                <button class="copyBtn" onclick="copyToClipboard()">Copy</button>
+            </div>
+            <div class="rangeSliderContainer">
+                <span class="count">Length: <span id="rangeValue">16</span></span>
+                <div class="rangeSliderContent">
+                    <span>12</span>
+                    <input type="range" min="12" max="16" value="16" id="rangeInput"
+                    oninput="document.getElementById('rangeValue').innerText = this.value">
+                    <span>16</span>
+                </div>
+            </div>
+            <div class="setttings">
+                <div class="settingsHeading">SETTINGS</div>
+                <div class="settingRow">
+                    <span>Include Lowercase</span>
+                    <input type="checkbox" id="lowercase">
+                </div>
+                <div class="settingRow">
+                    <span>Include Uppercase</span>
+                    <input type="checkbox" id="uppercase">
+                </div>
+                <div class="settingRow">
+                    <span>Include Number</span>
+                    <input type="checkbox" id="numbers">
+                </div>
+                <div class="settingRow">
+                    <span>Include Symbol</span>
+                    <input type="checkbox" id="symbols">
+                </div>
+            </div>
+            <div class="generateBtnContainer">
+                <button onclick="generatePassword()">GENERATE PASSWORD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+
+        function generatePassword() {
+            // Placeholder — logic goes here
+            document.getElementById("result").value = "[Your password here]";
+        }
+    </script> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

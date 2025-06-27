@@ -1,0 +1,162 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background: linear-gradient(135deg, #1a1a2e, #0f0c29);
+     font-family: 'Poppins', sans-serif;
+     color: #eaeaea;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+ }
+
+ header {
+     text-align: center;
+     padding: 1rem;
+     font-size: 2rem;
+     color: #ffffff;
+ }
+
+ .container {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .card {
+     background-color: #16213e;
+     padding: 2rem;
+     border-radius: 20px;
+     width: 90%;
+     max-width: 500px;
+ }
+
+ .result input {
+     width: 100%;
+     padding: 0.7rem;
+     font-size: 1.2rem;
+     border-radius: 8px;
+     border: none;
+     margin-bottom: 1rem;
+     background-color: #1a1a2e;
+     color: #08d9d6;
+ }
+
+ .copyBtn {
+     background-color: #ff2e63;
+     color: white;
+     border: none;
+     padding: 0.5rem 1rem;
+     border-radius: 6px;
+     cursor: pointer;
+     float: right;
+ }
+
+ .rangeSliderContainer {
+     margin: 1rem 0;
+ }
+ .rangeSliderContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 1rem;
+     background: #1a1a2e;
+     border-radius: 8px;
+ }
+ .count {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.rangeSliderContent input[type="range"] {
+    width: 90%;
+    accent-color: #845ec2;
+}
+
+.rangeSliderContainer span {
+     font-weight: bold; 
+     
+ }
+
+ .settingsHeading {
+     font-size: 1rem;
+     margin: 1rem 0 0.5rem;
+ }
+
+ .settingRow {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 5px;
+     padding: 0.5rem 1rem;
+     background: #1a1a2e;
+     border-radius: 8px;
+ }
+
+ .settingRow span {
+     font-size: 0.95rem;
+ }
+
+ .settingRow input[type="checkbox"] {
+     width: 40px;
+     height: 20px;
+     appearance: none;
+     background: #555;
+     border-radius: 20px;
+     position: relative;
+     outline: none;
+     cursor: pointer;
+ }
+
+ .settingRow input[type="checkbox"]:checked {
+     background: #08d9d6;
+ }
+
+ .settingRow input[type="checkbox"]::before {
+     content: '';
+     width: 18px;
+     height: 18px;
+     background: white;
+     position: absolute;
+     top: 1px;
+     left: 1px;
+     border-radius: 50%;
+     transition: 0.3s;
+ }
+
+ .settingRow input[type="checkbox"]:checked::before {
+     left: 21px;
+ }
+
+ .generateBtnContainer {
+     text-align: center;
+     margin-top: 2rem;
+ }
+
+ .generateBtnContainer button {
+     padding: 1rem 2rem;
+     background: linear-gradient(to right, #845ec2, #d65db1);
+     border: none;
+     border-radius: 10px;
+     color: white;
+     font-size: 1rem;
+     cursor: pointer;
+ }
+
+ @media (max-width: 600px) {
+     .card {
+         padding: 1rem;
+     }
+
+     .settingRow span {
+         font-size: 0.85rem;
+     }
+ }
