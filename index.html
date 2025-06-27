@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyberpunk Password Generator</title>
+    <title>Password Generator</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,13 +20,23 @@
             <div class="result">
                 <input id="result" type="text" placeholder="Click on the Generate button" readonly>
                 <button class="copyBtn" onclick="copyToClipboard()">Copy</button>
+
+                
+                <div id="strength">
+                    <div id="strengthText">Strength: </div>
+                    <div id="strengthBarContainer">
+                        <div id="strengthBar">
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="rangeSliderContainer">
-                <span class="count">Length: <span id="rangeValue">16</span></span>
+                <span class="count">Length: <span id="rangeValue">12</span></span>
                 <div class="rangeSliderContent">
                     <span>12</span>
-                    <input type="range" min="12" max="16" value="16" id="rangeInput"
-                    oninput="document.getElementById('rangeValue').innerText = this.value">
+                    <input type="range" min="12" max="16" value="12" id="rangeInput"
+                        oninput="document.getElementById('rangeValue').innerText = this.value">
                     <span>16</span>
                 </div>
             </div>
@@ -50,18 +60,12 @@
                 </div>
             </div>
             <div class="generateBtnContainer">
-                <button onclick="generatePassword()">GENERATE PASSWORD</button>
+                <button id="generate-password-btn">GENERATE PASSWORD</button>
             </div>
         </div>
     </div>
 
-    <!-- <script>
 
-        function generatePassword() {
-            // Placeholder — logic goes here
-            document.getElementById("result").value = "[Your password here]";
-        }
-    </script> -->
 
     <script src="script.js"></script>
 </body>

@@ -45,11 +45,12 @@
      border: none;
      margin-bottom: 1rem;
      background-color: #1a1a2e;
-     color: #08d9d6;
+     color: #ffffff;
  }
 
  .copyBtn {
-     background-color: #ff2e63;
+     display: none;
+     background-color: #bf32df;
      color: white;
      border: none;
      padding: 0.5rem 1rem;
@@ -58,35 +59,58 @@
      float: right;
  }
 
+ #strength {
+     margin-top: 20px;
+     font-weight: bold;
+ }
+
+ #strengthBarContainer {
+     width: 100%;
+     height: 10px;
+     background: #ddd;
+     border-radius: 5px;
+     margin-top: 5px;
+ }
+
+ #strengthBar {
+     height: 100%;
+     width: 0%;
+     background: red;
+     border-radius: 5px;
+ }
+
  .rangeSliderContainer {
      margin: 1rem 0;
  }
+
  .rangeSliderContent {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 1rem 1rem;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     padding: 1rem 1rem;
      background: #1a1a2e;
      border-radius: 8px;
  }
+
  .count {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-}
+     display: inline-block;
+     margin-bottom: 0.5rem;
+ }
 
-.rangeSliderContent input[type="range"] {
-    width: 90%;
-    accent-color: #845ec2;
-}
+ .rangeSliderContent input[type="range"] {
+     width: 90%;
+     accent-color: #845ec2;
+ }
 
-.rangeSliderContainer span {
-     font-weight: bold; 
-     
+ .rangeSliderContainer span {
+     font-weight: bold;
+
  }
 
  .settingsHeading {
+     font-weight: bold;
      font-size: 1rem;
      margin: 1rem 0 0.5rem;
  }
@@ -117,7 +141,7 @@
  }
 
  .settingRow input[type="checkbox"]:checked {
-     background: #08d9d6;
+     background: #845ec2;
  }
 
  .settingRow input[type="checkbox"]::before {
