@@ -54,12 +54,12 @@ Length
 Character variety (uppercase, lowercase, numbers, symbols)
 
 # 📁 Folder Structure
-
+```
 📦 password-generator/
 ├── index.html        # HTML layout
 ├── style.css         # UI styling
 └── script.js         # JavaScript logic
-
+```
 
 # 🙌 Author
 Made with passion by Abin Rajesh
